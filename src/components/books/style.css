@@ -1,0 +1,13 @@
+.books {
+     width: 220px;
+     min-height: 300px;
+     height: auto;
+     /* background-color: #fff;
+     border-radius: 4px;
+     border: #ddd 1px solid; */
+}
+
+.books img {
+     width: 150px;
+     height: 230px;
+}
