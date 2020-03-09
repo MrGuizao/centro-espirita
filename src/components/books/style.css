@@ -1,13 +1,23 @@
-.books {
+/* .books {
      width: 220px;
      min-height: 300px;
      height: auto;
      /* background-color: #fff;
      border-radius: 4px;
-     border: #ddd 1px solid; */
+     border: #ddd 1px solid;
 }
 
-.books img {
+/* .books img {
      width: 170px;
      height: 250px;
+} */
+.card {
+     width: 45%;
+     height: auto;
+}
+
+.img-book {
+     width: 180px;
+     height: 270px;
+     margin-right: 8px;
 }

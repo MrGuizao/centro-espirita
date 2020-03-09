@@ -1,14 +1,17 @@
 import React from 'react';
 import './App.css';
 import Header from './components/header/Header';
-import Navigation from './components/navigation/Navigation';
-// ${process.env.REACT_APP_KEY}
+import Navigation from './containers/navigation/Navigation';
+import SearchBar from './containers/searchBar/SearchBar';
+
+import Routes from './Routes';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Navigation />
+      <SearchBar />
+      <Routes />
 
 
       {/* <i className="fas fa-star"></i> */}
