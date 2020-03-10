@@ -1,23 +1,28 @@
+import React, { Component } from 'react'
 import './App.css';
-import React from 'react';
+import api from './services/Api';
 import Header from './components/header/Header';
 import Navigation from './containers/navigation/Navigation';
-// import Login from './components/login/Login';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-// import Routes from './Routes';
+import SearchBar from './containers/searchBar/SearchBar';
 
-function App() {
-  return (
-    <BrowserRouter>
+export default class App extends Component {
+  state = {
+    title: '',
+    books: [],
+  }
+
+  searchTitle = async name => {
+    const res = await api.get(`volumes?q=${name}&printType=books&key=${process.env.REACT_APP_GOOGLE_BOOKS_KEY}`);
+    this.setState({ books: res.data.items });
+  }
+
+  render() {
+    return (
       <div className="App">
         <Header />
-        <Switch>
-          <Route exact path="/" component={Navigation} />
-          {/* <Route path="/login" component={Login} /> */}
-        </Switch>
+        <SearchBar searchTitle={this.searchTitle} />
+        <Navigation books={this.state.books} />
       </div>
-    </BrowserRouter>
-  );
+    );
+  }
 }
-
-export default App;

@@ -18,8 +18,8 @@ header nav ul li {
 */
 ul li {
      text-transform: capitalize;
-     font-weight: 500;
-     margin: 0 20px;
+     font-weight: 600;
+     margin: 0 15px;
      cursor: pointer;
 }
 .fa-ghost {

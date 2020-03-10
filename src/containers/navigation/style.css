@@ -1,11 +1,11 @@
 .dashboard-books {
      margin: 0 auto;
      width: 90%;
+     min-height: 30vh;
      display: flex;
      justify-content: center;
      flex-flow: wrap row;
      align-items: center;
-     border: 1px solid #ddd;
 }
 /* .dashboard-books{
      margin: 0 auto;
