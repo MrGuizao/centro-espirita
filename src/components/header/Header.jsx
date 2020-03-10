@@ -1,17 +1,19 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import './style.css';
+// import { Link } from 'react-router-dom';
 
 export default function Header() {
      return (
-          <header className="container-fluid d-flex justify-content-between align-items-center py-2 px-5 bg-primary">
-               <h1>Centro Espírita</h1>
-               <button className="bg-transparent border-0">
-                    {/* <Link> */}
-                         <i className="fas fa-sign-in-alt">Login</i>
-                    {/* </Link> */}
-               </button>
+          <nav className="py-2 px-5 bg-primary d-flex justify-content-between align-items-center">
+               <i className="fas fa-ghost"></i>
+               <ul className="nav justify-content-end">
+                    <li>Lista</li>
+                    <li>Favoritos</li>
+                    <li>Cadastrar livro</li>
+                    <li>Cadastrar clientes</li>
+                    <li>Sair</li>
+               </ul>
+          </nav>
 
-          </header>
      )
 }

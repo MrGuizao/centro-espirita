@@ -1,0 +1,28 @@
+/* header {
+     display: flex;
+     justify-content: space-between;
+     flex-flow: row nowrap;
+     align-items: center;
+}
+
+header nav ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+header nav ul li {
+     margin: 0 20px;
+     cursor: pointer;
+}
+*/
+ul li {
+     text-transform: capitalize;
+     font-weight: 500;
+     margin: 0 20px;
+     cursor: pointer;
+}
+.fa-ghost {
+     font-size: 3rem;
+     color: #fff;
+}

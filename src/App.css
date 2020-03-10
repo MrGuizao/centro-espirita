@@ -18,19 +18,12 @@ html,
 
 }
 
-.fa-star {
-  font-size: 3rem;
-  color: #ffd90055;
-
-}
-
-.fa-star:hover {
-  color: #ffd900;
-  transition: 0.1s;
-  transform: scale(1.1, 1.1);
-
-}
-
 i {
   font-size: 1.2rem;
+}
+
+.flex-pattern {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
 }

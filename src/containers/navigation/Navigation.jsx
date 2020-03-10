@@ -1,27 +1,31 @@
-import './style.css';
 import React, { Component } from 'react';
+import './style.css';
 import Books from '../../components/books/Books';
 import api from '../../services/Api';
+import SearchBar from '../searchBar/SearchBar';
 
 export default class Navigation extends Component {
      state = {
-          name: 'harry august',
+          title: '',
           books: [],
      }
 
-     async componentDidMount() {
-          const res = await api.get(`volumes?q=${this.state.name}&printType=books&key=${process.env.REACT_APP_GOOGLE_BOOKS_KEY}`);
+     searchTitle = async name => {
+          const res = await api.get(`volumes?q=${name}&printType=books&key=${process.env.REACT_APP_GOOGLE_BOOKS_KEY}`);
           this.setState({ books: res.data.items });
      }
 
      render() {
           const { books } = this.state;
           return (
-               <section className="dashboard-books container-fluid">
-                    {
-                         books.map(book => <Books key={book.id} books={book} />)
-                    }
-               </section>
+               <>
+                    <SearchBar searchTitle={this.searchTitle} />
+                    <section className="dashboard-books">
+                         {
+                              books.map(book => <Books key={book.id} books={book} />)
+                         }
+                    </section>
+               </>
           )
      }
 }

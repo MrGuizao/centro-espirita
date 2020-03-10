@@ -5,4 +5,13 @@
      justify-content: center;
      flex-flow: wrap row;
      align-items: center;
+     border: 1px solid #ddd;
 }
+/* .dashboard-books{
+     margin: 0 auto;
+     width: 90%;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: 200px;
+     
+} */

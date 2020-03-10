@@ -1,3 +1,44 @@
+.card {
+     width: 45%;
+     height: auto;
+     position: relative;
+}
+
+.img-book {
+     width: 180px;
+     height: 270px;
+     margin-right: 8px;
+}
+
+.fa-star,
+.fa-heart {
+     position: absolute;
+     top: 5px;
+     right: 8px;
+     font-size: 1.8em;
+     color: #ff000040;
+     z-index: 2;
+}
+
+.fa-star:hover,
+.fa-heart:hover {
+     color: #ff0000;
+     cursor: pointer;
+}
+
+@media (max-width: 875px){
+     .card {
+          width: 20%;
+          height: auto;
+          position: relative;
+     }
+     
+     .img-book {
+          width: 180px;
+          height: 270px;
+     }
+     
+}
 /* .books {
      width: 220px;
      min-height: 300px;
@@ -11,13 +52,3 @@
      width: 170px;
      height: 250px;
 } */
-.card {
-     width: 45%;
-     height: auto;
-}
-
-.img-book {
-     width: 180px;
-     height: 270px;
-     margin-right: 8px;
-}
