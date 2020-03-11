@@ -8,9 +8,9 @@ export default function Header() {
                <Link to="/" className="fas fa-ghost"></Link>
                {/* <i className="fas fa-ghost"></i> */}
                <ul className="nav justify-content-end">
-                    <Link to="/" className="linkagem">Favoritos</Link>
-                    <Link to="/" className="linkagem">Cadastrar livro</Link>
-                    <Link to="/" className="linkagem">Cadastrar clientes</Link>
+                    <Link to="/favoritos" className="linkagem">Favoritos</Link>
+                    <Link to="/livros" className="linkagem">Cadastrar livro</Link>
+                    <Link to="/clientes" className="linkagem">Cadastrar clientes</Link>
                     <Link to="/login" className="linkagem">Entrar</Link>
                </ul>
           </nav>
