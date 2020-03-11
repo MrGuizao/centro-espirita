@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './style.css';
+import './search.css';
 
 export default class SearchBar extends Component {
-     state = {
+     state = { 
           title: '',
      }
 
@@ -13,9 +13,9 @@ export default class SearchBar extends Component {
           this.setState({ title: '' });
      }
 
-     render() {
+     render() { 
           return (
-               <form onSubmit={this.handleSubmit} className="d-flex my-4">
+               <form onSubmit={this.handleSubmit} className="search">
                     <input type="text" className="form-control" placeholder="Pesquisar livro..." value={this.state.title} onChange={this.handleChange} />
                     <button className="btn btn-primary rounded">Pesquisar</button>
                </form>

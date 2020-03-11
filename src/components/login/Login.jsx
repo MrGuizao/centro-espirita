@@ -1,20 +1,19 @@
-import React from 'react'
-import './style.css';
+import React from 'react';
+import './login.css';
 
 export default function Login() {
      return (
-          <form>
+
+          <form className="login rounded">
                <div>
-                    <label htmlFor="email">E-mail: </label>
-                    <input type="email" id="email" name="email" />
+                    <span className="white-box rounded"><i class="fas fa-user"></i></span>
+                    <input type="email" name="email" className="form-control" placeholder="E-mail..." />
                </div>
                <div>
-                    <label htmlFor="password">Senha: </label>
-                    <input type="password" id="password" name="password" />
+                    <span className="white-box rounded"><i className="fas fa-key"></i></span>
+                    <input type="password" name="password" className="form-control" placeholder="Senha..." />
                </div>
-               <div className="button">
-                    <button className="btn btn-primary">Entrar</button>
-               </div>
-          </form>
+               <button className="btn btn-block btn-primary">Entrar</button>
+          </form >
      )
 }

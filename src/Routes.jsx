@@ -1,12 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Login from './components/login/Login';
 import Books from './components/books/Books';
 
 const Routes = () => (
      <BrowserRouter>
           <Switch>
-               <Route exact path="/" component={Books} />
+               <Route exact path="/" render={props => <Navigation />} />
+               <Route exact path="/" render={props >= <Books />} />
                <Route path="/login" component={Login} />
           </Switch>
      </BrowserRouter>

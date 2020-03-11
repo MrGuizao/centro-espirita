@@ -1,0 +1,32 @@
+form.login {
+     text-align: center;
+     width: 350px;
+     height: 350px;
+     background-color: #d8d8d8;
+     border: 1px solid #bbb;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: center;
+     align-items: center;
+}
+
+form.login div .white-box {
+     background-color: white;
+     padding: 6px 10px;
+}
+
+form.login div {
+     display: flex;
+     flex-flow: row nowrap;
+     align-items: center;
+     justify-content: space-evenly;
+     margin: 5px 0;
+}
+
+form.login div input {
+     width: 200px;
+}
