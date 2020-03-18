@@ -23,9 +23,9 @@ export default class App extends Component {
     return (
       <div className="App">
         <BrowserRouter>
-        <Header />
-          <Route exact path="/" render={(props) => <SearchBar searchTitle={this.searchTitle}/>} />
-          <Route exact path="/" render={(props) => <Navigation books={this.state.books}/>} />
+          <Header />
+          <Route exact path="/" render={(props) => <SearchBar searchTitle={this.searchTitle} />} />
+          <Route exact path="/" render={(props) => <Navigation books={this.state.books} />} />
           <Switch>
             <Route path="/login" component={Login} />
           </Switch>
